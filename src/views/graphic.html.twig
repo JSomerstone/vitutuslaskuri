@@ -3,17 +3,15 @@
         class="col-xs-{{ statistics.width }} pissed-off-meter pissed-off-meter-{{ statistics.width }}"
     >
     </div>
-    <div class="col-sm-5">
-        <h3>
-        {% if statistics.width < 3 %}
-            Hyvin menee
-        {% elseif statistics.width < 6 %}
-            Vitutusta on havaittavissa
-        {% elseif statistics.width < 9 %}
-            Melko runstasta vitutusta
-        {% elseif statistics.width >= 9 %}
-            Jengii vituttaa ihan Simona
-        {% endif %}
-        </h3>
-    </div>
 </div>
+<h3>
+{% if statistics.width < 3 %}
+    Porukalla menee hyvin
+{% elseif statistics.width < 6 %}
+    Vitutusta on havaittavissa
+{% elseif statistics.width < 9 %}
+    Melko runstasta vitutusta
+{% elseif statistics.width >= 9 %}
+    Jengii vituttaa ihan Simona
+{% endif %}
+</h3>
