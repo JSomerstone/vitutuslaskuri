@@ -33,6 +33,7 @@ if (isset($_POST['pissedOff']))
 
     file_put_contents($statisticsFile, json_encode($statistics));
     $response['message'][] = 'Vitutuksesi aste huomioitu';
+    $response['hide_submit'] = true;
 }
 $response['statistics'] = $statistics[$today];
 

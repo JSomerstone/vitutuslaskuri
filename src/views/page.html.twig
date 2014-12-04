@@ -4,6 +4,7 @@
     <h1>Kuinka paljon vituttaa?</h1>
     {% include 'graphic.html.twig' %}
     <div class="row">
+        {% if not hide_submit %}
         <form method="post">
             <input type="hidden" name="pissedOff" value="1">
             <input type="submit" name="nope" value="Ei ollenkaan" class="btn btn-success btn-lg">
@@ -11,5 +12,6 @@
             <input type="submit" name="more" class="btn btn-warning btn-lg" value="Vituttaa">
             <input type="submit" name="lot" class="btn btn-danger btn-lg" value="Paljon">
         </form>
+        {% endif %}
     </div>
 {% endblock %}
