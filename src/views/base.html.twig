@@ -18,6 +18,30 @@
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css" media="all">
         <title>{% block title %}{% endblock %}</title>
         {% block head %}{% endblock %}
+        <style>
+            div.pissed-off-meter {
+                border: 1px solid #000000;
+                height: 25px;
+                border-radius: 9px;
+                margin-bottom: 25px;
+            }
+
+            div.pissed-off-meter-0, div.pissed-off-meter-1, div.pissed-off-meter-2 {
+                background-color: #00FF66;
+            }
+            div.pissed-off-meter-3, div.pissed-off-meter-4, div.pissed-off-meter-5 {
+                background-color: #FFFF66;
+            }
+            div.pissed-off-meter-6, div.pissed-off-meter-7, div.pissed-off-meter-8 {
+                background-color: #FF9900;
+            }
+            div.pissed-off-meter-9, div.pissed-off-meter-10, div.pissed-off-meter-11 {
+                background-color: #FF0000;
+            }
+            div.pissed-off-meter-12 {
+                background-color: #660033;
+            }
+        </style>
     </head>
     <body>
         {% block body %}
