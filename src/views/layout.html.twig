@@ -5,14 +5,15 @@
 {% block title %}{{ title }}{% endblock %}
 {% block content_header '' %}
 {% block body %}
-    <div class="container-fluid">
-        <div class="jumbotron">
+    <div class="jumbotron">
+        <div class="container">
             <div class="col-sm-6 col-sm-offset-3 ">
                 {% include 'notifications.html.twig' %}
                 {% block content '' %}
             </div>
         </div>
     </div>
+    <footer>&copy; <a href="https://jsomerstone.github.io" target="_blank">JSomerstone</a> </footer>
 {% endblock %}
 
 {% set field_classes = 'col-sm-7 col-md-6' %}
