@@ -1,10 +1,13 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <h1>Kuinka paljon vituttaa?</h1>
+    <h1 xmlns="http://www.w3.org/1999/html">Kuinka paljon vituttaa?</h1>
     <div class="row">
-        <button class="btn btn-success btn-lg btn-block">Ei ollenkaan</button>
-        <button class="btn btn-warning btn-lg btn-block">Semisti</button>
-        <button class="btn btn-danger btn-lg btn-block">Paljon</button>
+        <form>
+            <input type="submit" name="not" class="btn btn-success btn-lg">Ei ollenkaan</input>
+            <input type="submit" name="bit" class="btn btn-default btn-lg">Vähän</input>
+            <input type="submit" name="more" class="btn btn-warning btn-lg">Vituttaa</input>
+            <input type="submit" name="lot" class="btn btn-danger btn-lg">Paljon</input>
+        </form>
     </div>
 {% endblock %}
