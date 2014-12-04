@@ -1,7 +1,8 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <h1 xmlns="http://www.w3.org/1999/html">Kuinka paljon vituttaa?</h1>
+    <h1>Kuinka paljon vituttaa?</h1>
+    {% include 'graphic.html.twig' %}
     <div class="row">
         <form method="post">
             <input type="hidden" name="pissedOff" value="1">
