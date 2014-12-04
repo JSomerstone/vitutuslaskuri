@@ -5,10 +5,10 @@ $loader = new Twig_Loader_Filesystem(realpath(__DIR__ . '/../views/'));
 $twig = new Twig_Environment($loader);
 
 $response = array(
-    'message' => null,
-    'notice' => null,
-    'error' => null,
-    'statistics' => array()
+    'message' => array(),
+    'notice' => array(),
+    'error' => array(),
+    'statistics' => array($today => array('count' => 0, 'average' => 0, 'sum' => 0))
 );
 
 if (isset($_POST['pissedOff']))
@@ -31,7 +31,7 @@ if (isset($_POST['pissedOff']))
     );
 
     file_put_contents($statisticsFile, json_encode($statistics));
-    $response['message'] = 'Vitutuksesi aste huomioitu';
+    $response['message'][] = 'Vitutuksesi aste huomioitu';
     $response['statistics'] = $statistics;
 }
 
