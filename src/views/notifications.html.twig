@@ -2,19 +2,16 @@
     <div class="{{ notification_classes }}" id="notification-container">
         {% for flashMessage in error %}
                 <div class="alert alert-danger">
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
                     <strong>Error!</strong> {{ flashMessage }}
                 </div>
         {% endfor %}
         {% for flashMessage in notice %}
                 <div class="alert alert-warning">
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
                     <strong>Notice!</strong> {{ flashMessage }}
                 </div>
         {% endfor %}
         {% for flashMessage in message %}
                 <div class="alert alert-info">
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
                     {{ flashMessage }}
                 </div>
         {% endfor %}
