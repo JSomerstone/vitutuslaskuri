@@ -5,6 +5,7 @@ $loader = new Twig_Loader_Filesystem(realpath(__DIR__ . '/../views/'));
 $twig = new Twig_Environment($loader);
 
 $response = array(
+    'title' => 'Vitutsmittari',
     'message' => array(),
     'notice' => array(),
     'error' => array(),
