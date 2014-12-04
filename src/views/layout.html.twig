@@ -6,9 +6,11 @@
 {% block content_header '' %}
 {% block body %}
     <div class="container-fluid">
-        <div class="col-sm-6 col-sm-offset-3">
-            {% include 'notifications.html.twig' %}
-            {% block content '' %}
+        <div class="jumbotron">
+            <div class="col-sm-6 col-sm-offset-3 ">
+                {% include 'notifications.html.twig' %}
+                {% block content '' %}
+            </div>
         </div>
     </div>
 {% endblock %}
